@@ -1,0 +1,184 @@
+
+body/*Características Principais do Corpo*/
+{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.grid-container/*Classe contentora onde a estrutura Grid é declarada*/
+{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr ;/*Definir a estrutura da página com linhas e colunas*/
+grid-template-rows: 80px 100px 80px 200px 200px 150px 70px 150px;
+margin: 0px;
+padding: 0px;
+}
+
+.element/*Classe principal*/
+{
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+
+}
+
+
+.element:nth-child(1)/*Filha classe número 1*/
+{
+
+    background-color: azure;  
+}
+
+.element:nth-child(1){
+
+    background-color: #ffffff;
+    width: 100%;
+    grid-column: 1/4; 
+    grid-row: 1; 
+}
+
+#first-content/* ID criado para modificar as características editadas na primeira lista UL */
+{
+    background-color: #2f3f31;
+    padding:0px auto;
+    margin: 0px auto;
+    text-align: center;
+    width: 80%;
+    height: 80%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.element:nth-child(2)/*Filha classe número 2*/
+{
+    background-color: #ffffff;
+    height: 70px;
+    grid-column: 2 ; 
+    grid-row: 2; 
+}
+
+.element:nth-child(3)/*Filha classe número 3*/
+{
+    background-color: #ffffff;
+    grid-column: 1 / 4; 
+    grid-row: 3; 
+}
+
+.element:nth-child(4)/*Filha classe número 4*/
+{
+    background-color: #ffffff;
+    height: 100%;
+    width: 100%;
+    grid-column: 1; 
+    grid-row: 4/6; 
+}
+
+#services/* ID criado para modificar as características editadas na lista UL */
+{
+    padding: 0px auto;
+    margin: 20px ;
+    height: 100%;
+    width: 70%;
+    row-gap: 10px;
+    background-color: #ffffff;
+    display:inline-block;
+    align-items: center;
+    text-align: center; 
+}
+
+#services li/* ID criado para modificar as características editadas na lista li */
+{
+    padding: 5px;
+    margin: 10px;
+    height: 60px;
+    width: 120;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #2f3f31;
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    line-height: 60px;
+}
+
+
+.element:nth-child(5)/*Filha classe número 5*/
+{
+    background-color: #ffffff;
+    grid-column: 2; 
+    grid-row: 4; 
+}
+
+.element:nth-child(6)/*Filha classe número 6*/
+{
+    background-color: #ffffff;
+    grid-column: 3; 
+    grid-row: 4; 
+}
+
+.element:nth-child(7)/*Filha classe número 7*/
+{
+    background-color: #ffffff;
+    grid-column: 3; 
+    grid-row: 5; 
+}
+
+.element:nth-child(8)/*Filha classe número 8*/
+{
+    background-color: #ffffff;
+    grid-column: 1/4; 
+    grid-row: 6; 
+}
+
+.element:nth-child(9)/*Filha classe número 9*/
+{
+    background-color: #ffffff;
+    grid-column: 1/4; 
+    grid-row: 7; 
+}
+
+.element:nth-child(10)/*Filha classe número 10*/
+{
+    background-color: #ffffff;
+    grid-column: 1/4; 
+    grid-row: 8; 
+}
+
+
+.element ul/*Lista nao ordenada*/
+
+.element ul{
+
+    list-style: none;
+    padding: 1px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #2f3f31;
+    margin: 1px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.element ul li/*Lista ordenada*/
+{
+    padding: 20px;
+    margin: 0px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #2f3f31;
+    color: white;
+    text-align: center;
+}
+
+.element ul li a/*Lista ordenada com link*/
+{
+    padding: 5px;
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #2f3f31;
+    color: white;
+    text-decoration: none;
+    align-items: center;
+}
