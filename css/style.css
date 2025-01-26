@@ -147,7 +147,6 @@ padding: 0px;
 }
 
 
-.element ul/*Lista nao ordenada*/
 
 .element ul{
 
@@ -181,4 +180,61 @@ padding: 0px;
     color: white;
     text-decoration: none;
     align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+
+
+.grid-container/*Classe contentora onde a estrutura Grid é declarada*/
+{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;/*Definir a estrutura da página com linhas e colunas*/
+grid-template-rows: 50px 60px 40px 200px 200px 150px 70px 150px;
+margin: 0px;
+padding: 0px;
+}
+
+.element #first-content/* ID criado para modificar as características editadas na primeira lista UL */
+{
+    background-color: #2f3f31;
+    padding:0px auto;
+    margin: 0px auto;
+    text-align: center;
+    width: 80%;
+    height: 100%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+
+    .element ul li {
+        background-color: #2f3f31;
+        padding: 0px;
+        font-size: 12px;
+    }
+
+    .element ul li a {
+        padding: 5px;
+        margin: 5px;
+        font-size: 9px;
+    }
+
+.element h1 img{
+    width: 90%;
+    height: 90%;
+    align-items: center;
+}
+
+.element h3 {
+    font-size: 11px;
+    
+}
+
+.element:nth-child(6)/*Filha classe número 6*/
+{
+    background-color: #ffffff;
+    grid-column: 3; 
+    grid-row: 4; 
+}
 }
