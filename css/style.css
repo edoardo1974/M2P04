@@ -189,7 +189,7 @@ padding: 0px;
 {
 display: grid;
 grid-template-columns: 1fr 1fr 1fr;/*Definir a estrutura da página com linhas e colunas*/
-grid-template-rows: 50px 60px 40px 200px 200px 150px 70px 150px;
+grid-template-rows: 50px 60px 50px 200px 200px 150px 70px 150px;
 margin: 0px;
 padding: 0px;
 }
@@ -220,10 +220,29 @@ padding: 0px;
         font-size: 9px;
     }
 
+    #services li/* ID criado para modificar as características editadas na lista li */
+    {
+        padding: 5px;
+        margin: 10px;
+        
+        width: 120px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #2f3f31;
+        color: white;
+        text-decoration: none;
+        align-items: center;
+        line-height: 60px;
+    }
+
 .element h1 img{
-    width: 90%;
-    height: 90%;
+    
+    text-align: center;
+    justify-content: center; 
     align-items: center;
+    display: flex;
+    width: 85%;
+    height: 85%;
+    
 }
 
 .element h3 {
