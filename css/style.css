@@ -182,7 +182,9 @@ padding: 0px;
     align-items: center;
 }
 
-@media screen and (max-width: 600px) {
+
+
+@media screen and (max-width: 490px) {
 
 
 .grid-container/*Classe contentora onde a estrutura Grid é declarada*/
@@ -200,7 +202,7 @@ padding: 0px;
     padding:0px auto;
     margin: 0px auto;
     text-align: center;
-    width: 80%;
+    width: 100%;
     height: 100%;
     display: flex; 
     justify-content: center; 
@@ -240,7 +242,7 @@ padding: 0px;
     justify-content: center; 
     align-items: center;
     display: flex;
-    width: 85%;
+    width: 100%;
     height: 85%;
     
 }
@@ -250,10 +252,70 @@ padding: 0px;
     
 }
 
+.element form label {
+    font-size: 11px;
+}
+
+.element form input {
+    font-size: 11px;
+}
+
+.element form button {
+    font-size: 11px;
+}
+
+.element:nth-child(2)/*Filha classe número 2*/
+{
+    text-align: center;
+    justify-content: center; 
+    align-items: center;
+    background-color: #ffffff;
+    height: 70px;
+    grid-column: 2; 
+    grid-row: 2; 
+    width: 55%;
+    height: 50%;
+}
+
 .element:nth-child(6)/*Filha classe número 6*/
 {
     background-color: #ffffff;
     grid-column: 3; 
     grid-row: 4; 
+    display: none;
 }
+
+.element:nth-child(7)/*Filha classe número 7*/
+{
+    background-color: #ffffff;
+    grid-column: 3; 
+    grid-row: 5; 
+    display: none;
+}
+
+
+.element:nth-child(5)/*Filha classe número 5*/
+{
+    background-color: #ffffff;
+    grid-column: 2/4; 
+    grid-row: 4/6; 
+}
+
+.element:nth-child(9)/*Filha classe número 9*/
+{
+    background-color: #ffffff;
+    grid-column: 2; 
+    grid-row: 7; 
+    width: 55%;
+    height: 50%;
+}
+
+.element:nth-child(10)/*Filha classe número 10*/
+{
+    background-color: #ffffff;
+    grid-column: 1/4; 
+    grid-row: 8; 
+    font-size: 11px;
+}
+
 }
